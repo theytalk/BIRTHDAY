@@ -26,7 +26,7 @@ export default function MessageScene({ onBack }: { onBack: () => void }) {
       }} />
 
       {/* Grand glowing light top center */}
-      <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[120vw] h-[80vh] rounded-full pointer-events-none z-0"
+      <div className="hidden md:block absolute top-[-10%] left-1/2 -translate-x-1/2 w-[120vw] h-[80vh] rounded-full pointer-events-none z-0"
         style={{
           background: 'radial-gradient(ellipse at top center, rgba(255,255,255,0.85) 0%, rgba(255,215,235,0.4) 40%, transparent 70%)',
           mixBlendMode: 'screen'
@@ -34,7 +34,7 @@ export default function MessageScene({ onBack }: { onBack: () => void }) {
       />
 
       {/* Bottom glowing aura */}
-      <div className="absolute bottom-[-20%] left-1/2 -translate-x-1/2 w-[100vw] h-[60vh] rounded-full pointer-events-none z-0"
+      <div className="hidden md:block absolute bottom-[-20%] left-1/2 -translate-x-1/2 w-[100vw] h-[60vh] rounded-full pointer-events-none z-0"
         style={{
           background: 'radial-gradient(ellipse at bottom center, rgba(255,255,255,0.6) 0%, rgba(255,180,220,0.2) 50%, transparent 70%)',
           mixBlendMode: 'screen'

@@ -13,7 +13,8 @@ export default function Glitters() {
 
   useEffect(() => {
     // Generate shiny glitter particles
-    const newParticles = Array.from({ length: 60 }).map((_, i) => {
+    const particleCount = typeof window !== 'undefined' && window.innerWidth < 768 ? 15 : 60;
+    const newParticles = Array.from({ length: particleCount }).map((_, i) => {
       return {
         id: i,
         x: Math.random() * 100, // vw

@@ -17,7 +17,8 @@ export default function FloatingDust() {
 
   useEffect(() => {
     // Generate a mix of tiny dust and larger glowing bokeh
-    const newParticles = Array.from({ length: 80 }).map((_, i) => {
+    const particleCount = typeof window !== 'undefined' && window.innerWidth < 768 ? 15 : 80;
+    const newParticles = Array.from({ length: particleCount }).map((_, i) => {
       const isBokeh = i % 5 === 0; // Every 5th particle is a larger, blurred bokeh light
       
       return {
