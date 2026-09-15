@@ -131,6 +131,13 @@ export default function MessageScene({ onBack }: { onBack: () => void }) {
                   whileHover={{ scale: 1.1, rotate: -3 }}
                   whileTap={{ scale: 0.95 }}
                 />
+                <motion.p
+                  className="absolute -bottom-5 md:-bottom-6 font-sans text-[8px] md:text-[10px] tracking-[0.2em] md:tracking-[0.3em] uppercase text-white/90 group-hover:text-white transition-colors font-semibold drop-shadow-md bg-black/30 px-2.5 py-0.5 md:px-4 md:py-1 rounded-full backdrop-blur-sm whitespace-nowrap"
+                  animate={{ opacity: [0.5, 1, 0.5] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                >
+                  Tap Me
+                </motion.p>
               </motion.div>
             )}
           </AnimatePresence>
