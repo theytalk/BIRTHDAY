@@ -50,7 +50,7 @@ export default function MessageScene({ onBack }: { onBack: () => void }) {
       </button>
 
       {/* MAIN CONTENT */}
-      <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-4 py-8 max-h-[100dvh]">
+      <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-4 py-4 md:py-8 max-h-[100dvh]">
 
         {/* Elegant Header */}
         <motion.div
@@ -60,27 +60,27 @@ export default function MessageScene({ onBack }: { onBack: () => void }) {
           className="text-center"
         >
           {/* Decorative line */}
-          <div className="flex items-center justify-center gap-4 mb-5">
-            <div className="w-16 h-[1px] bg-gradient-to-r from-transparent to-champagne-gold/60" />
-            <span className="text-champagne-gold text-sm tracking-widest">✦</span>
-            <div className="w-16 h-[1px] bg-gradient-to-l from-transparent to-champagne-gold/60" />
+          <div className="flex items-center justify-center gap-2 md:gap-4 mb-2 md:mb-5">
+            <div className="w-12 md:w-16 h-[1px] bg-gradient-to-r from-transparent to-champagne-gold/60" />
+            <span className="text-champagne-gold text-xs md:text-sm tracking-widest">✦</span>
+            <div className="w-12 md:w-16 h-[1px] bg-gradient-to-l from-transparent to-champagne-gold/60" />
           </div>
 
-          <h2 className="font-serif text-3xl md:text-4xl text-deep-navy tracking-wide mb-2">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-deep-navy tracking-wide mb-1 md:mb-2">
             OTS Terooozzzz
           </h2>
-          <p className="font-serif italic text-sm text-deep-navy/45 tracking-wider">
+          <p className="font-serif italic text-xs sm:text-sm text-deep-navy/45 tracking-wider">
             Panas & Hujan Kita Terjang Bersama!
           </p>
         </motion.div>
 
         {/* 12 PHOTOS + ENVELOPE LAYOUT */}
-        <div className="w-full flex-1 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 lg:gap-16 px-2 md:px-8 mt-2 md:mt-4 max-h-full overflow-hidden relative">
+        <div className="w-full flex-1 flex flex-col md:flex-row items-center justify-center gap-1.5 md:gap-8 lg:gap-16 px-2 md:px-8 mt-1 md:mt-4 max-h-full overflow-hidden relative">
 
 
 
           {/* FIRST HALF PHOTOS (Top on Mobile, Left on Desktop) */}
-          <div className="relative grid grid-cols-3 md:grid-cols-2 gap-1.5 md:gap-3 w-[90vw] md:w-[40vw] max-w-[450px] md:max-w-[320px]">
+          <div className="relative grid grid-cols-3 md:grid-cols-2 gap-1 md:gap-3 w-[82vw] md:w-[40vw] max-w-[340px] md:max-w-[320px]">
             
             {/* Love 1 anchored to the top-left of this grid */}
             <img
@@ -126,7 +126,7 @@ export default function MessageScene({ onBack }: { onBack: () => void }) {
                 <motion.img
                   src="/assets/amplop.png"
                   alt="Envelope"
-                  className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 object-contain"
+                  className="w-20 h-20 sm:w-28 sm:h-28 md:w-48 md:h-48 object-contain"
                   style={{ filter: 'drop-shadow(0 15px 30px rgba(0, 0, 0, 0.4))' }}
                   whileHover={{ scale: 1.1, rotate: -3 }}
                   whileTap={{ scale: 0.95 }}
@@ -136,7 +136,7 @@ export default function MessageScene({ onBack }: { onBack: () => void }) {
           </AnimatePresence>
 
           {/* SECOND HALF PHOTOS (Bottom on Mobile, Right on Desktop) */}
-          <div className="relative grid grid-cols-3 md:grid-cols-2 gap-1.5 md:gap-3 w-[90vw] md:w-[40vw] max-w-[450px] md:max-w-[320px]">
+          <div className="relative grid grid-cols-3 md:grid-cols-2 gap-1 md:gap-3 w-[82vw] md:w-[40vw] max-w-[340px] md:max-w-[320px]">
             
             {/* Love 2 anchored to the bottom-right of this grid */}
             <img
