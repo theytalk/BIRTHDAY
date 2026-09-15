@@ -123,7 +123,7 @@ function App() {
                 onClick={(e) => { e.stopPropagation(); setAppState('MESSAGE'); }}
                 className="group w-48 h-48 rounded-full border border-champagne-gold/40 flex flex-col items-center justify-center gap-3 font-serif italic text-2xl text-white hover:bg-champagne-gold hover:text-black transition-all duration-500 shadow-[0_0_30px_rgba(255,105,180,0.1)] hover:shadow-[0_0_40px_rgba(255,105,180,0.4)]"
               >
-                <img src="/assets/amplop.png" alt="Message" className="w-16 h-16 object-contain drop-shadow-md group-hover:scale-110 transition-transform duration-500" />
+                <img src="/assets/message.png" alt="Message" className="w-16 h-16 object-contain drop-shadow-md group-hover:scale-110 transition-transform duration-500" />
                 <span>Message</span>
               </button>
               <button
